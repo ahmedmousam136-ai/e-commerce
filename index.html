@@ -704,7 +704,7 @@ footer{
   <div class="hero-bg">
     <div class="hero-bg-placeholder"></div>
     <img
-      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85"
+      src="images/hero-banner.jpg"
       alt="Hero background"
       loading="eager"
       onerror="this.style.display='none'"
@@ -881,28 +881,28 @@ footer{
 <script>
 const PRODUCTS=[
   {id:1,name:"Aero Pro Backpack",cat:"Bags",price:149,old:199,rating:4.8,reviews:214,badge:"sale",
-   img:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=700&q=80",
+   img:"images/product-1.jpg",
    desc:"Ultra-lightweight 30L backpack with a weatherproof shell, concealed laptop sleeve, and forged-alloy magnetic fasteners. Conceived for those who move purposefully through the world."},
   {id:2,name:"Carbon Series Watch",cat:"Accessories",price:289,old:null,rating:5.0,reviews:89,badge:"new",
-   img:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&q=80",
+   img:"images/product-2.jpg",
    desc:"Minimalist sapphire crystal timepiece with a hand-laid carbon fibre bezel. Water resistant to 100m. Swiss quartz movement. The watch that says everything by saying nothing."},
   {id:3,name:"Flux Running Tee",cat:"Apparel",price:58,old:null,rating:4.6,reviews:342,badge:null,
-   img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700&q=80",
+   img:"images/product-3.jpg",
    desc:"Technical moisture-wicking fabric engineered with a four-way stretch construction. A garment that disappears on the body — letting only your movement speak."},
   {id:4,name:"Neon Sprint Sneakers",cat:"Footwear",price:195,old:240,rating:4.9,reviews:167,badge:"sale",
-   img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&q=80",
+   img:"images/product-4.jpg",
    desc:"Responsive adaptive-foam midsole meets a seamlessly bonded engineered mesh upper. Six carefully considered colourways. Comfort that persists from the first hour to the last."},
   {id:5,name:"Studio Wireless Buds",cat:"Tech",price:129,old:null,rating:4.7,reviews:521,badge:"new",
-   img:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&q=80",
+   img:"images/product-5.jpg",
    desc:"Active noise cancellation with 32 hours of battery endurance. Silk-smooth haptic touch controls. Premium acoustic tuning developed with audiophiles, for everyone."},
   {id:6,name:"Grid Cargo Trousers",cat:"Apparel",price:112,old:null,rating:4.5,reviews:98,badge:null,
-   img:"https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=700&q=80",
+   img:"images/product-6.jpg",
    desc:"Six-pocket technical cargos with articulated knee panelling. Ripstop nylon-cotton blend. A slim-tapered silhouette that transitions from the street to the trail without compromise."},
   {id:7,name:"Motion Gym Gloves",cat:"Accessories",price:42,old:null,rating:4.4,reviews:173,badge:null,
-   img:"https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?w=700&q=80",
+   img:"images/product-7.jpg",
    desc:"Full-palm silicone grip geometry, micro-perforated ventilation zones, and an adjustable wrist stabiliser. For those who train with intent."},
   {id:8,name:"Hyper Cycling Kit",cat:"Apparel",price:98,old:130,rating:4.8,reviews:56,badge:"sale",
-   img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80",
+   img:"images/product-8.jpg",
    desc:"Aerodynamic jersey and bib-shorts ensemble. Italian chamois padding with laser-bonded seamless edges. Developed in the velodrome. Worn on the road."},
 ];
 const CATS=["All",...new Set(PRODUCTS.map(p=>p.cat))];
@@ -1082,5 +1082,23 @@ buildGrid();
 renderCart();
 observeReveal();
 </script>
+
+<!--
+VERSION 2 IMAGE SETUP
+
+Create:
+/images/hero-banner.jpg
+/images/product-1.jpg
+/images/product-2.jpg
+/images/product-3.jpg
+/images/product-4.jpg
+/images/product-5.jpg
+/images/product-6.jpg
+/images/product-7.jpg
+/images/product-8.jpg
+
+All product references now use local repository images.
+-->
+
 </body>
 </html>
