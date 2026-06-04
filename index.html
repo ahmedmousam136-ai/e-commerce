@@ -693,6 +693,214 @@ footer{
 .reveal:nth-child(5){transition-delay:.4s}
 
 /* ── RESPONSIVE ── */
+/* ── ATELIER ── */
+.atelier-hero{
+  padding:140px 10vw 80px;
+  background:var(--bg2);
+  border-bottom:1px solid var(--border);
+}
+.atelier-story{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:0;align-items:stretch;
+  border:1px solid var(--border);
+  margin-bottom:1px;
+}
+.atelier-story-text{
+  padding:80px 10vw 80px 10vw;
+  display:flex;flex-direction:column;justify-content:center;
+  background:var(--bg2);
+}
+.atelier-story-text p{
+  font-size:.84rem;color:var(--muted2);line-height:1.95;
+  letter-spacing:.03em;margin-bottom:20px;
+}
+.atelier-story-img{
+  position:relative;overflow:hidden;
+  background:var(--surface);
+  min-height:500px;
+}
+.atelier-story-img img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(.75) saturate(.65);
+}
+.atelier-values{padding:100px 10vw}
+.values-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);
+}
+.value-card{
+  background:var(--bg2);padding:44px 36px;
+  position:relative;overflow:hidden;
+  transition:background .3s;
+}
+.value-card:hover{background:var(--surface)}
+.value-num{
+  font-family:var(--serif);font-size:5rem;font-weight:300;
+  color:var(--border2);line-height:1;
+  position:absolute;top:20px;right:24px;
+  transition:color .3s;
+}
+.value-card:hover .value-num{color:var(--border)}
+.value-title{
+  font-family:var(--serif);font-size:1.4rem;font-weight:300;
+  color:var(--ivory);margin-bottom:14px;line-height:1.2;
+}
+.value-desc{font-size:.78rem;color:var(--muted2);line-height:1.85;letter-spacing:.03em}
+.atelier-timeline{
+  padding:0 10vw 100px;
+}
+.timeline-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);
+}
+.timeline-cell{
+  background:var(--bg2);padding:48px 40px;
+  transition:background .3s;
+}
+.timeline-cell:hover{background:var(--surface)}
+.timeline-year{
+  font-family:var(--serif);font-size:2.6rem;font-weight:300;
+  color:var(--gold);margin-bottom:10px;
+}
+.timeline-event{
+  font-family:var(--serif);font-size:1.25rem;font-weight:300;
+  color:var(--ivory);margin-bottom:14px;
+}
+.timeline-desc{font-size:.78rem;color:var(--muted2);line-height:1.85;letter-spacing:.03em}
+.atelier-team{padding:0 10vw 100px}
+.team-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);
+}
+.team-card{background:var(--bg2);overflow:hidden}
+.team-card-img{
+  aspect-ratio:3/4;overflow:hidden;background:var(--surface);
+}
+.team-card-img img{
+  width:100%;height:100%;object-fit:cover;object-position:top center;
+  filter:brightness(.8) saturate(.6);
+  transition:transform .8s var(--ease),filter .8s;
+}
+.team-card:hover .team-card-img img{transform:scale(1.04);filter:brightness(.9) saturate(.75)}
+.team-card-body{padding:28px 28px 32px;background:var(--surface)}
+.team-card-name{font-family:var(--serif);font-size:1.2rem;font-weight:300;color:var(--ivory);margin-bottom:4px}
+.team-card-role{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.team-card-bio{font-size:.76rem;color:var(--muted2);line-height:1.85}
+
+/* ── JOURNAL ── */
+.journal-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);
+}
+.journal-card{
+  background:var(--bg2);cursor:pointer;overflow:hidden;
+  transition:background .3s;
+}
+.journal-card:hover{background:var(--surface)}
+.journal-card-img{
+  overflow:hidden;background:var(--surface);
+}
+.journal-card-img img{
+  width:100%;aspect-ratio:16/10;object-fit:cover;
+  filter:brightness(.7) saturate(.65);
+  transition:transform .9s var(--ease),filter .8s;
+}
+.journal-card:first-child .journal-card-img img{aspect-ratio:4/5}
+.journal-card:hover .journal-card-img img{transform:scale(1.05);filter:brightness(.85) saturate(.8)}
+.journal-card-body{padding:28px 28px 32px}
+.journal-card-cat{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.journal-card-title{font-family:var(--serif);font-size:1.2rem;font-weight:300;color:var(--ivory);line-height:1.3;margin-bottom:10px}
+.journal-card:first-child .journal-card-title{font-size:1.55rem}
+.journal-card-excerpt{font-size:.76rem;color:var(--muted2);line-height:1.85;margin-bottom:14px;letter-spacing:.03em}
+.journal-card-date{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* ── CONTACT ── */
+.contact-wrap{
+  display:grid;grid-template-columns:1fr 1.2fr;
+  gap:0;align-items:start;
+  padding:100px 10vw;
+}
+.contact-info{padding-right:80px}
+.contact-title{
+  font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.5rem);
+  font-weight:300;color:var(--ivory);line-height:1;
+  margin-bottom:24px;
+}
+.contact-title em{font-style:italic;color:var(--gold2)}
+.contact-intro{font-size:.84rem;color:var(--muted2);line-height:1.9;max-width:380px;margin-bottom:52px;letter-spacing:.03em}
+.contact-details{display:flex;flex-direction:column;gap:0;border:1px solid var(--border)}
+.contact-detail{
+  display:flex;align-items:flex-start;gap:20px;
+  padding:20px 24px;
+  border-bottom:1px solid var(--border);
+  transition:background .25s;
+}
+.contact-detail:last-child{border-bottom:none}
+.contact-detail:hover{background:var(--surface)}
+.contact-detail-icon{
+  width:36px;height:36px;flex-shrink:0;
+  border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;color:var(--gold);margin-top:2px;
+}
+.contact-detail-label{font-size:8px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.contact-detail-value{font-size:.82rem;color:var(--ivory2);letter-spacing:.04em}
+.contact-form-wrap{
+  border:1px solid var(--border);
+  background:var(--surface);
+  padding:48px 44px;
+}
+.contact-form-label{
+  display:flex;align-items:center;gap:12px;
+  font-size:9px;letter-spacing:.35em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:10px;
+}
+.contact-form-label::before{content:'';width:24px;height:1px;background:var(--gold)}
+.contact-form-note{font-size:.78rem;color:var(--muted2);margin-bottom:32px;letter-spacing:.03em}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-group{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+.form-group label{font-size:8px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted2)}
+.form-input,.form-select,.form-textarea{
+  background:var(--bg2);
+  border:1px solid var(--border2);
+  color:var(--text);
+  font-family:var(--sans);font-size:.82rem;font-weight:300;
+  padding:13px 16px;
+  outline:none;
+  transition:border-color .25s;
+  width:100%;
+}
+.form-input::placeholder,.form-textarea::placeholder{color:var(--muted)}
+.form-select{appearance:none;cursor:pointer;color:var(--muted)}
+.form-select option{background:var(--surface);color:var(--text)}
+.form-textarea{resize:vertical;min-height:120px;line-height:1.7}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold-dim)}
+.btn-send{
+  width:100%;
+  background:transparent;
+  border:1px solid var(--gold-dim);
+  color:var(--gold2);
+  font-family:var(--sans);font-size:10px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;
+  padding:15px;
+  position:relative;overflow:hidden;
+  transition:color .35s;
+  cursor:pointer;
+  margin-top:8px;
+}
+.btn-send::before{
+  content:'';position:absolute;inset:0;
+  background:var(--gold);
+  transform:translateX(-101%);
+  transition:transform .4s var(--ease);
+}
+.btn-send:hover::before{transform:translateX(0)}
+.btn-send:hover{color:#000}
+.btn-send span{position:relative;z-index:1}
+
 @media(max-width:1100px){
   .nav{padding:18px 32px}
   .nav.scrolled{padding:13px 32px}
@@ -712,6 +920,20 @@ footer{
   .hero{padding:0 6vw 10vh}
   .section{padding:72px 6vw}
   .divider{margin:0 6vw}
+  .atelier-story{grid-template-columns:1fr}
+  .atelier-story-img{min-height:340px}
+  .atelier-story-text{padding:60px 6vw}
+  .values-grid{grid-template-columns:1fr 1fr}
+  .timeline-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .journal-grid{grid-template-columns:1fr 1fr}
+  .journal-card:first-child{grid-column:1/-1}
+  .contact-wrap{grid-template-columns:1fr;padding:72px 6vw}
+  .contact-info{padding-right:0;margin-bottom:48px}
+  .atelier-values{padding:72px 6vw}
+  .atelier-timeline{padding:0 6vw 72px}
+  .atelier-team{padding:0 6vw 72px}
+  .atelier-hero{padding:120px 6vw 60px}
 }
 @media(max-width:640px){
   .nav{padding:14px 20px}
@@ -749,6 +971,19 @@ footer{
   .cart-drawer{width:100vw}
   .modal-body{padding:28px 24px}
   .trust-grid{grid-template-columns:1fr}
+  .values-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr}
+  .journal-grid{grid-template-columns:1fr}
+  .journal-card:first-child{grid-column:auto}
+  .contact-form-wrap{padding:28px 24px}
+  .form-row{grid-template-columns:1fr}
+  .atelier-hero{padding:100px 5vw 50px}
+  .atelier-story-text{padding:48px 5vw}
+  .atelier-values{padding:60px 5vw}
+  .atelier-timeline{padding:0 5vw 60px}
+  .atelier-team{padding:0 5vw 60px}
+  .contact-wrap{padding:60px 5vw}
+  .contact-info{padding-right:0;margin-bottom:48px}
 }
 @media(max-width:400px){
   .product-grid{grid-template-columns:1fr}
@@ -763,9 +998,9 @@ footer{
   <div class="nav-left">
     <a href="#home">Home</a>
     <a href="#shop">Shop</a>
-    <a href="#featured">Atelier</a>
-    <a href="#">Journal</a>
-    <a href="#">Contact</a>
+    <a href="#atelier">Atelier</a>
+    <a href="#journal">Journal</a>
+    <a href="#contact">Contact</a>
   </div>
   <div class="nav-logo">Maison Volta<span>Est. MMXXI</span></div>
   <div class="nav-right">
@@ -908,6 +1143,233 @@ footer{
 
 <!-- TOAST -->
 <div class="toast-wrap" id="toastWrap"></div>
+
+<!-- ═══════════════════════════════════════════ ATELIER ═══ -->
+<section id="atelier">
+  <div class="atelier-hero">
+    <div class="s-label">Our Story</div>
+    <div class="s-heading" style="max-width:700px;margin-bottom:0">Where <em>Objects</em><br/>Find Meaning.</div>
+  </div>
+
+  <div class="atelier-story">
+    <div class="atelier-story-text">
+      <p>Maison Volta was founded on a single conviction: that the objects we choose to live with are a form of autobiography. Every piece in our collection is selected for its capacity to endure — in craft, in relevance, and in beauty.</p>
+      <p>We work directly with artisans and independent designers across twelve countries. No middlemen, no compromise. Just extraordinary objects at prices that respect the intelligence of our customers.</p>
+    </div>
+    <div class="atelier-story-img">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80" alt="Atelier object" loading="lazy"/>
+    </div>
+  </div>
+
+  <div class="atelier-values">
+    <div class="s-label">What Guides Us</div>
+    <div class="s-heading">Our <em>Values</em></div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-num">01</div>
+        <div class="value-title">Craft First</div>
+        <div class="value-desc">Every object must evidence the hand that made it. We reject the machine-perfect in favour of the beautifully considered. Evidence of process is evidence of care.</div>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">02</div>
+        <div class="value-title">Radical Transparency</div>
+        <div class="value-desc">We publish our cost structures, our supplier relationships, and our margin. Luxury should not require mystification — it should reward scrutiny.</div>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">03</div>
+        <div class="value-title">Enduring Beauty</div>
+        <div class="value-desc">We do not trade in trends. Each piece is selected to gain rather than lose meaning over time. The only question we ask: will this still matter in twenty years?</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="atelier-timeline">
+    <div class="s-label">Timeline</div>
+    <div class="s-heading">How We <em>Began</em></div>
+    <div class="timeline-grid">
+      <div class="timeline-cell reveal">
+        <div class="timeline-year">2021</div>
+        <div class="timeline-event">Founded in Paris</div>
+        <div class="timeline-desc">Two former luxury buyers, tired of the industry's opacity, launch Maison Volta from a studio apartment near Oberkampf with six products and a strong conviction.</div>
+      </div>
+      <div class="timeline-cell reveal">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-event">First 100 Artisans</div>
+        <div class="timeline-desc">We establish direct relationships with craftspeople across France, Italy, Japan, and Morocco. Our supplier directory goes live — the first of its kind in the sector.</div>
+      </div>
+      <div class="timeline-cell reveal">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-event">Global Shipping</div>
+        <div class="timeline-desc">Maison Volta begins shipping to 80 countries with carbon-neutral delivery. Revenue reaches €4M. We hire our first full-time buyer based in Tokyo.</div>
+      </div>
+      <div class="timeline-cell reveal">
+        <div class="timeline-year">2025</div>
+        <div class="timeline-event">130+ Countries</div>
+        <div class="timeline-desc">Operating from Paris, Tokyo, and New York with over 400 curated objects. Our Journal launches, celebrating the stories behind each maker we represent.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="atelier-team">
+    <div class="s-label" style="padding:0 0 0 0;margin-left:0">The People</div>
+    <div class="s-heading">Meet the <em>Team</em></div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-card-img">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Isabelle Maret" loading="lazy"/>
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-name">Isabelle Maret</div>
+          <div class="team-card-role">Founder &amp; Creative Director</div>
+          <div class="team-card-bio">Former buying director at Colette. Has been obsessing over beautiful objects since the age of seven. Believes that good taste is a learnable skill.</div>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-card-img">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Julien Castel" loading="lazy"/>
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-name">Julien Castel</div>
+          <div class="team-card-role">Head of Curation</div>
+          <div class="team-card-bio">Ceramicist-turned-buyer with a particular weakness for Japanese woodwork and Scandinavian textiles. Travels 160 days a year in search of the exceptional.</div>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-card-img">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&q=80" alt="Nadia Osei" loading="lazy"/>
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-name">Nadia Osei</div>
+          <div class="team-card-role">Head of Experience</div>
+          <div class="team-card-bio">Spent a decade at Selfridges perfecting the art of the exceptional customer moment. Leads every aspect of how Maison Volta feels, from packaging to post-purchase.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════ JOURNAL ═══ -->
+<section class="section" id="journal">
+  <div class="s-label">From the Studio</div>
+  <div class="s-heading">The <em>Journal</em></div>
+  <p class="s-desc">Essays, maker portraits, and considered perspectives on the objects that shape a life well-lived.</p>
+  <div class="journal-grid">
+    <div class="journal-card reveal">
+      <div class="journal-card-img">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="The Last Weavers of Kyoto" loading="lazy"/>
+      </div>
+      <div class="journal-card-body">
+        <div class="journal-card-cat">Craft</div>
+        <div class="journal-card-title">The Last Weavers of Kyoto</div>
+        <div class="journal-card-excerpt">Inside the ateliers where traditional Nishijin-ori silk weaving persists — by choice, not necessity.</div>
+        <div class="journal-card-date">12 May 2025</div>
+      </div>
+    </div>
+    <div class="journal-card reveal">
+      <div class="journal-card-img">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Why Constraints Produce Better Objects" loading="lazy"/>
+      </div>
+      <div class="journal-card-body">
+        <div class="journal-card-cat">Design</div>
+        <div class="journal-card-title">Why Constraints Produce Better Objects</div>
+        <div class="journal-card-excerpt">A conversation with Florentine furniture maker Marco Belli on the liberating paradox of limitation.</div>
+        <div class="journal-card-date">28 Apr 2025</div>
+      </div>
+    </div>
+    <div class="journal-card reveal">
+      <div class="journal-card-img">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="In Praise of Imperfection" loading="lazy"/>
+      </div>
+      <div class="journal-card-body">
+        <div class="journal-card-cat">Material</div>
+        <div class="journal-card-title">In Praise of Imperfection</div>
+        <div class="journal-card-excerpt">The Japanese concept of wabi-sabi as a design philosophy — and why perfection is the enemy of beauty.</div>
+        <div class="journal-card-date">14 Apr 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════ CONTACT ═══ -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <h2 class="contact-title">Get in <em>Touch.</em></h2>
+      <p class="contact-intro">We believe in the value of a considered conversation. Whether you have a question about a specific object, need guidance on a gift, or simply wish to know more — we are here.</p>
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="contact-detail-icon">✉</div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-value">hello@maisonvolta.com</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">◎</div>
+          <div>
+            <div class="contact-detail-label">Address</div>
+            <div class="contact-detail-value">14 Rue de Bretagne, 75003 Paris, France</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">◷</div>
+          <div>
+            <div class="contact-detail-label">Atelier Hours</div>
+            <div class="contact-detail-value">Monday — Friday, 10:00 — 18:00 CET</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">☏</div>
+          <div>
+            <div class="contact-detail-label">Telephone</div>
+            <div class="contact-detail-value">+33 1 42 71 34 56</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <div class="contact-form-label">Send a Message</div>
+      <p class="contact-form-note">We respond to every enquiry within one business day.</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input class="form-input" type="text" placeholder="Isabelle" id="cfirst"/>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input class="form-input" type="text" placeholder="Maret" id="clast"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input class="form-input" type="email" placeholder="hello@example.com" id="cemail"/>
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <select class="form-select form-input" id="csubject">
+          <option value="" disabled selected>Select a subject…</option>
+          <option>Product Enquiry</option>
+          <option>Order Support</option>
+          <option>Gift Guidance</option>
+          <option>Press &amp; Partnerships</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea class="form-textarea" placeholder="Tell us how we can help…" id="cmessage"></textarea>
+      </div>
+      <button class="btn-send" onclick="handleContactSubmit()"><span>Send Message</span></button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
 
 <!-- FOOTER -->
 <footer>
@@ -1153,6 +1615,36 @@ function observeReveal(){
   const obs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in")})},{threshold:.08});
   document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
 }
+
+/* CONTACT FORM */
+function handleContactSubmit(){
+  const first=$("cfirst").value.trim();
+  const email=$("cemail").value.trim();
+  const msg=$("cmessage").value.trim();
+  if(!first||!email||!msg){showToast("Please fill in all required fields");return;}
+  showToast("Message sent — we'll be in touch shortly.","ok");
+  $("cfirst").value="";$("clast").value="";$("cemail").value="";
+  $("csubject").selectedIndex=0;$("cmessage").value="";
+}
+
+/* ACTIVE NAV */
+(function(){
+  const sections=["home","shop","atelier","journal","contact"];
+  const links=document.querySelectorAll(".nav-left a");
+  function setActive(){
+    let current="home";
+    sections.forEach(id=>{
+      const el=document.getElementById(id);
+      if(el&&window.scrollY>=el.offsetTop-120) current=id;
+    });
+    links.forEach(a=>{
+      const href=a.getAttribute("href").replace("#","");
+      a.style.color=href===current?"var(--gold)":"";
+    });
+  }
+  window.addEventListener("scroll",setActive,{passive:true});
+  setActive();
+})();
 
 /* INIT */
 buildFilters();
